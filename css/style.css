@@ -8,6 +8,8 @@
   --red: #b53434;
   --green: #26877f;
   --white: #fff;
+  --black: #000;
+  --light-grey: #ccc;
 }
 
 /***** FONTS *****/
@@ -45,6 +47,13 @@ h2 {
   line-height: 3rem;
 }
 
+h3 {
+  font-family: 'LeagueSpartan-Thin';
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  line-height: 3rem;
+}
+
 p {
   font-family: 'LeagueSpartan-Regular';
   font-size: 1.5rem;
@@ -70,18 +79,19 @@ p {
 
 .copy {
   width: 60%;
-  margin: 2rem 0 0 2rem;
+  margin: 2rem 0 0 4rem;
 }
 
 .copy h2 {
   color: var(--white);
+  margin-bottom: 0.5rem;
 }
 
 .copy p {
   width: 75%;
   color: var(--white);
   line-height: 2rem;
-  margin-top: 1rem;
+  margin: 1rem 0 2rem 0;
 }
 
 .copy button {
@@ -171,6 +181,7 @@ span {
   background: red;
   margin: 0 auto;
   border-radius: 0.5rem;
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.25);
 }
 
 .card-1:hover,
@@ -178,31 +189,49 @@ span {
 .card-3:hover {
   transform: scale(1.1);
   transition: all 0.4s;
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.25);
+}
+
+.card-copy {
+  margin: 1rem 2rem;
+  color: var(--light-grey);
+  line-height: 2rem;
 }
 
 .card-1 {
-  background: url('../img/annie-spratt-cmm7Dcz3ztU-unsplash.jpg');
+  background: linear-gradient(rgba(16, 16, 16, 0.45), rgba(16, 16, 16, 0.45)),
+    url('../img/annie-spratt-cmm7Dcz3ztU-unsplash.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .card-2 {
-  background: url('../img/abby-rurenko-uOYak90r4L0-unsplash.jpg');
+  background: linear-gradient(rgba(16, 16, 16, 0.45), rgba(16, 16, 16, 0.45)),
+    url('../img/abby-rurenko-uOYak90r4L0-unsplash.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .card-3 {
-  background: url('../img/abhishek-jain-Dj5umFUxLps-unsplash.jpg');
+  background: linear-gradient(rgba(16, 16, 16, 0.45), rgba(16, 16, 16, 0.45)),
+    url('../img/abhishek-jain-Dj5umFUxLps-unsplash.jpg');
   background-size: cover;
   background-position: center;
 }
 
 /* Footer */
 .footer {
-  width: 80%;
-  height: 10rem;
-  background: green;
+  display: flex;
+  height: 17rem;
   margin: 0 auto;
+  background-color: #262626;
+}
+
+.footer-logo img {
+  width: 6%;
+  margin: 2rem 0 2rem 12rem;
+}
+
+.copyright p {
+  color: var(--white);
 }
