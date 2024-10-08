@@ -3,6 +3,53 @@
   padding: 0;
 }
 
+/* Colors */
+:root {
+  --red: #b53434;
+  --green: #26877f;
+  --white: #fff;
+}
+
+/***** FONTS *****/
+
+@font-face {
+  font-family: 'LeagueSpartan-Regular';
+  src: url('../fonts/League_Spartan/LeagueSpartan-Regular.ttf');
+  format: ('true-type');
+}
+
+@font-face {
+  font-family: 'LeagueSpartan-Bold';
+  src: url('../fonts/League_Spartan/LeagueSpartan-Bold.ttf');
+  format: ('true-type');
+}
+
+@font-face {
+  font-family: 'LeagueSpartan-Thin';
+  src: url('../fonts/League_Spartan/LeagueSpartan-Thin.ttf');
+  format: ('true-type');
+}
+
+/* Base Styles */
+h1 {
+  font-family: 'LeagueSpartan-Bold';
+  color: var(--white);
+  font-size: 3rem;
+  line-height: 2rem;
+}
+
+h2 {
+  font-family: 'LeagueSpartan-Regular';
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  line-height: 3rem;
+}
+
+p {
+  font-family: 'LeagueSpartan-Regular';
+  font-size: 1.5rem;
+}
+
 /* Logo */
 .main-logo {
   width: 5%;
@@ -13,10 +60,50 @@
   width: 100%;
 }
 
+/* Header */
+.header {
+  height: 40rem;
+  background: linear-gradient(rgba(16, 16, 16, 0.4), rgba(16, 16, 16, 0.4)),
+    url(../img/gaetano-cessati-CCy2UFLO1Mg-unsplash.jpg);
+  background-size: cover;
+}
+
+.copy {
+  width: 60%;
+  margin: 2rem 0 0 2rem;
+}
+
+.copy h2 {
+  color: var(--white);
+}
+
+.copy p {
+  width: 75%;
+  color: var(--white);
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+.copy button {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--red);
+  color: var(--white);
+  font-family: 'LeagueSpartan-Thin';
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
 /* Navigation */
 .main-nav {
   display: flex;
-  width: 30%;
+  font-family: 'LeagueSpartan-Regular';
+  color: var(--white);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  width: 55%;
   margin: 0 auto;
 }
 
@@ -26,6 +113,7 @@
 
 .main-nav ul {
   display: flex;
+  margin: 2rem 0;
 }
 
 .main-nav a {
