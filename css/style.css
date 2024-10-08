@@ -39,8 +39,8 @@ h1 {
 }
 
 h2 {
-  font-family: 'LeagueSpartan-Regular';
-  font-size: 2rem;
+  font-family: 'LeagueSpartan-Thin';
+  font-size: 2.5rem;
   letter-spacing: 0.3rem;
   line-height: 3rem;
 }
@@ -63,7 +63,7 @@ p {
 /* Header */
 .header {
   height: 40rem;
-  background: linear-gradient(rgba(16, 16, 16, 0.4), rgba(16, 16, 16, 0.4)),
+  background: linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)),
     url(../img/gaetano-cessati-CCy2UFLO1Mg-unsplash.jpg);
   background-size: cover;
 }
@@ -125,16 +125,35 @@ p {
 .main-content {
   width: 90%;
   height: 37rem;
-  margin: 2rem auto;
+  margin: 5rem auto;
 }
 
 /* Promotion */
 .promotion {
-  display: flex;
   width: 87%;
   height: 20rem;
-  background: steelblue;
   margin: 1rem auto;
+}
+
+.promotion h2 {
+  font-family: 'LeagueSpartan-Regular';
+  color: var(--green);
+  width: 45%;
+  margin: 0 auto;
+}
+
+.promotion p {
+  width: 60%;
+  margin: 1rem auto;
+  line-height: 2rem;
+  text-align: center;
+}
+
+span {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
 }
 
 .info-cards {
@@ -150,7 +169,34 @@ p {
   width: 30%;
   height: 15rem;
   background: red;
-  margin: 1rem auto;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.card-1 {
+  background: url('../img/annie-spratt-cmm7Dcz3ztU-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card-2 {
+  background: url('../img/abby-rurenko-uOYak90r4L0-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card-3 {
+  background: url('../img/abhishek-jain-Dj5umFUxLps-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 /* Footer */
