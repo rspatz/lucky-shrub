@@ -32,3 +32,43 @@
   margin-left: 5rem;
   text-decoration: none;
 }
+
+/* Main Content */
+.main-content {
+  width: 90%;
+  height: 37rem;
+  margin: 2rem auto;
+}
+
+/* Promotion */
+.promotion {
+  display: flex;
+  width: 87%;
+  height: 20rem;
+  background: steelblue;
+  margin: 1rem auto;
+}
+
+.info-cards {
+  display: flex;
+  width: 90%;
+  margin: 1rem auto;
+  margin-bottom: 0;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  width: 30%;
+  height: 15rem;
+  background: red;
+  margin: 1rem auto;
+}
+
+/* Footer */
+.footer {
+  width: 80%;
+  height: 10rem;
+  background: green;
+  margin: 0 auto;
+}
