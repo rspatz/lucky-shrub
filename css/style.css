@@ -147,7 +147,7 @@ p {
 .promotion {
   width: 87%;
   height: 20rem;
-  padding-top: 2rem;
+  padding-top: 4rem;
   margin: 1rem auto;
   border-radius: 1rem;
   background: linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)),
@@ -235,7 +235,7 @@ span {
   display: flex;
   width: 78%;
   height: 17rem;
-  margin: 0 auto;
+  margin: 6rem auto;
   border-top: solid 2px var(--dark-grey);
 }
 
