@@ -14,7 +14,6 @@
 }
 
 /***** FONTS *****/
-
 @font-face {
   font-family: 'LeagueSpartan-Regular';
   src: url('../fonts/League_Spartan/LeagueSpartan-Regular.ttf');
@@ -99,6 +98,7 @@ p {
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
 }
+
 /* Navigation */
 .main-nav {
   display: flex;
@@ -177,6 +177,7 @@ span {
   text-transform: uppercase;
 }
 
+/* Cards */
 .info-cards {
   display: flex;
   width: 90%;
