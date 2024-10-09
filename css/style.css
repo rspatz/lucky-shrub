@@ -10,6 +10,7 @@
   --white: #fff;
   --black: #000;
   --light-grey: #ccc;
+  --dark-grey: #262626;
 }
 
 /***** FONTS *****/
@@ -61,7 +62,7 @@ p {
 
 /* Logo */
 .main-logo {
-  width: 5%;
+  width: 6%;
   margin: 2rem auto;
 }
 
@@ -70,13 +71,6 @@ p {
 }
 
 /* Header */
-.header {
-  height: 40rem;
-  background: linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)),
-    url(../img/gaetano-cessati-CCy2UFLO1Mg-unsplash.jpg);
-  background-size: cover;
-}
-
 .copy {
   width: 60%;
   margin: 2rem 0 0 4rem;
@@ -109,12 +103,14 @@ p {
 .main-nav {
   display: flex;
   font-family: 'LeagueSpartan-Regular';
-  color: var(--white);
+  color: var(--black);
   font-size: 1.25rem;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
-  width: 55%;
+  width: 60%;
   margin: 0 auto;
+  border-top: 2px solid var(--dark-grey);
+  border-bottom: 2px solid var(--dark-grey);
 }
 
 .main-nav li {
@@ -127,8 +123,17 @@ p {
 }
 
 .main-nav a {
-  margin-left: 5rem;
+  margin-left: 8rem;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.main-nav a:hover {
+  color: var(--green);
+}
+
+.main-nav a:active {
+  color: var(--red);
 }
 
 /* Main Content */
@@ -142,20 +147,26 @@ p {
 .promotion {
   width: 87%;
   height: 20rem;
+  padding-top: 2rem;
   margin: 1rem auto;
+  border-radius: 1rem;
+  background: linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)),
+    url(../img/gaetano-cessati-CCy2UFLO1Mg-unsplash.jpg);
+  background-size: cover;
 }
 
 .promotion h2 {
-  font-family: 'LeagueSpartan-Regular';
-  color: var(--green);
+  font-family: 'LeagueSpartan-Bold';
+  color: var(--white);
   width: 45%;
   margin: 0 auto;
 }
 
 .promotion p {
+  color: var(--white);
   width: 60%;
   margin: 1rem auto;
-  line-height: 2rem;
+  line-height: 2.5rem;
   text-align: center;
 }
 
@@ -169,7 +180,7 @@ span {
 .info-cards {
   display: flex;
   width: 90%;
-  margin: 1rem auto;
+  margin: 2rem auto;
   margin-bottom: 0;
 }
 
@@ -180,8 +191,8 @@ span {
   height: 15rem;
   background: red;
   margin: 0 auto;
-  border-radius: 0.5rem;
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  box-shadow: 0 2rem 6.4rem rgba(0, 0, 0, 0.25);
 }
 
 .card-1:hover,
@@ -193,27 +204,27 @@ span {
 }
 
 .card-copy {
-  margin: 1rem 2rem;
+  margin: 1.5rem 2rem;
   color: var(--light-grey);
   line-height: 2rem;
 }
 
 .card-1 {
-  background: linear-gradient(rgba(16, 16, 16, 0.45), rgba(16, 16, 16, 0.45)),
+  background: linear-gradient(rgba(16, 16, 16, 0.45), rgba(16, 16, 16, 0.7)),
     url('../img/annie-spratt-cmm7Dcz3ztU-unsplash.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .card-2 {
-  background: linear-gradient(rgba(16, 16, 16, 0.45), rgba(16, 16, 16, 0.45)),
+  background: linear-gradient(rgba(16, 16, 16, 0.45), rgba(16, 16, 16, 0.7)),
     url('../img/abby-rurenko-uOYak90r4L0-unsplash.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 
 .card-3 {
-  background: linear-gradient(rgba(16, 16, 16, 0.45), rgba(16, 16, 16, 0.45)),
+  background: linear-gradient(rgba(16, 16, 16, 0.45), rgba(16, 16, 16, 0.7)),
     url('../img/abhishek-jain-Dj5umFUxLps-unsplash.jpg');
   background-size: cover;
   background-position: center;
@@ -222,16 +233,19 @@ span {
 /* Footer */
 .footer {
   display: flex;
+  width: 78%;
   height: 17rem;
   margin: 0 auto;
-  background-color: #262626;
+  border-top: solid 2px var(--dark-grey);
 }
 
 .footer-logo img {
   width: 6%;
-  margin: 2rem 0 2rem 12rem;
+  margin: 2rem 0 0 1rem;
 }
 
 .copyright p {
-  color: var(--white);
+  margin: 2rem 0;
+  color: var(--dark-grey);
+  white-space: nowrap;
 }
